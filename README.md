@@ -186,8 +186,8 @@ In other cases, we can configure different ingress gateways versions for differe
  
 
 ```
-kubectl apply -f ./ingress/web-api-gw.yaml -n hellocloud
-kubectl apply -f ./ingress/web-api-vs.yaml -n hellocloud
+kubectl apply -f ./ingress/web-api-gw.yaml -n partner-igw-1-16-7
+kubectl apply -f ./ingress/web-api-vs.yaml -n partner-igw-1-16-7
 
 istioctl pc listener deployment/partner-igw-1-16-7 -n partner-igw-1-16-7
 
