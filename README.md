@@ -143,7 +143,7 @@ Deploying Gateway and Virtual Service
 
 In this lab setup, incoming traffic for the host ***hellocloud.io*** is directed through the ***partner-igw-1-16-7*** ingress gateway. To achieve this, the selector gw: partner-igw-1-16-7 is applied, ensuring that traffic specifically routes through this gateway.
 
-From there, the traffic is forwarded to the relevant workloads, which are managed by the ISTIOD revision 1-16-7. This configuration ensures both that traffic flows through the specified gateway and that it is handled by workloads controlled by the desired Istio control plane revision.
+From there, the traffic is forwarded to the relevant workloads, which are managed by the ***ISTIOD revision 1-16-7***. This configuration ensures both that traffic flows through the specified gateway and that it is handled by workloads controlled by the desired Istio control plane revision.
 
 ingress/web-api-gw.yaml
   ```
