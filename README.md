@@ -162,6 +162,11 @@ spec:
     hosts:
     - "hellocloud.io"
   ```
+ingress/web-api-vs.yaml
+
+```
+
+```
 
 In other cases, we can configure different ingress gateways versions for different incoming traffice and hosts, depending on the scenarios.
  
