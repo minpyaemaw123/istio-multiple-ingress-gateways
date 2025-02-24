@@ -77,12 +77,6 @@ Deploying ISTIOD 1.16.7 and Ingress Gateways 1.16.7
 ---
 
 ```
-watch kubectl get iop -A
-watch kubectl get all -n istio-system
-watch kubectl get all -n partner-igw-1-16-7 
-watch kubectl get all -n external-igw-1-16-7 
-watch kubectl get all -n security-igw-1-16-7 
-
 istioctl version
 #check current selected version
 asdf list
@@ -94,6 +88,11 @@ kubectl create ns partner-igw-1-16-7
 kubectl create ns security-igw-1-16-7
 kubectl create ns external-igw-1-16-7
 
+watch kubectl get iop -A
+watch kubectl get all -n istio-system
+watch kubectl get all -n partner-igw-1-16-7 
+watch kubectl get all -n external-igw-1-16-7 
+watch kubectl get all -n security-igw-1-16-7 
 
 istioctl install -y -n partner-igw-1-16-7 -f partner-igw-1-16-7.yaml --revision ${ISTIO_REVISION}
 istioctl install -y -n external-igw-1-16-7 -f external-igw-1-16-7.yaml --revision ${ISTIO_REVISION}
@@ -103,12 +102,6 @@ istioctl install -y -n security-igw-1-16-7 -f security-igw-1-16-7.yaml --revisio
 Deployment for ISTIOD 1.17.5 and Ingress Gateways 1.17.5
 ---
 ```
-watch kubectl get iop -A
-watch kubectl get all -n istio-system
-watch kubectl get all -n partner-igw-1-17-5 
-watch kubectl get all -n external-igw-1-17-5 
-watch kubectl get all -n security-igw-1-17-5 
-
 istioctl version
 #check current selected version
 asdf list
@@ -119,6 +112,12 @@ export ISTIO_REVISION=1-17-5
 kubectl create ns partner-igw-1-17-5
 kubectl create ns security-igw-1-17-5
 kubectl create ns external-igw-1-17-5
+
+watch kubectl get iop -A
+watch kubectl get all -n istio-system
+watch kubectl get all -n partner-igw-1-17-5 
+watch kubectl get all -n external-igw-1-17-5 
+watch kubectl get all -n security-igw-1-17-5
 
 istioctl install -y -n partner-igw-1-17-5 -f partner-igw-1-17-5.yaml --revision ${ISTIO_REVISION}
 istioctl install -y -n external-igw-1-17-5 -f external-igw-1-17-5.yaml --revision ${ISTIO_REVISION}
