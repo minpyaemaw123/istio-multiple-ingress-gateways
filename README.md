@@ -165,7 +165,21 @@ spec:
 ingress/web-api-vs.yaml
 
 ```
-
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: web-api-gw-vs
+spec:
+  hosts:
+  - "hellocloud.io"
+  gateways:
+  - web-api-gateway
+  http:
+  - route:
+    - destination:
+        host: web-api.hellocloud.svc.cluster.local # fix it
+        port:
+          number: 8080
 ```
 
 In other cases, we can configure different ingress gateways versions for different incoming traffice and hosts, depending on the scenarios.
