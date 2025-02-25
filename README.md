@@ -11,7 +11,7 @@ This lab demonstrates the process of deploying Istio Ingress Gateways across dif
 
 The lab provides hands-on experience in managing a complex Istio environment, showcasing how to handle traffic routing and pod placement in a Kubernetes cluster with multiple ingress gateways.
 
-![](imgs/multiple_ingress_gateway.png)
+![](imgs/multiple_ingress_igw.png)
 
 
 Ref: 
